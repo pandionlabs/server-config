@@ -1,0 +1,7 @@
+[submodule "plausible-ce"]
+	path = plausible-ce
+	url = https://github.com/plausible/community-edition
+
+[submodule "star-voting-discord"]
+	path = star-voting-discord
+	url = https://github.com/pandionlabs/star-voting-discord
