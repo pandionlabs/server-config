@@ -1,0 +1,10 @@
+services:
+  bao:
+    image: ghcr.io/openbao/openbao
+    restart: unless-stopped
+    command: bao server -config=/openbao/bao-config.hcl
+    ports:
+      - 8200:8200
+    volumes:
+      - ./raft:/openbao/raft
+      - ./bao-config.hcl:/openbao/bao-config.hcl
